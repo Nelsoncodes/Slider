@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Container">
+        <div class="parent-container">
+                <div class="circle one">1</div>
+                <div class="circle two">2</div>
+                <div class="circle three">3</div>
+                <div class="circle four">4</div>
+
+                <div class="progress">
+                    <div class="anim"></div>
+                </div>
+
+                    <button class="btn" id="prev">Prev</button>
+                    <button class="btn" id="next">Next</button>
+        </div>
+                <div class="footer">
+                    <button class="foot">Get in Touch</button>
+                </div>
+    </div>
+
+
+    <style>
+        
+        body{
+            font-family: 'Muli', sans-serif;
+	        align-items: center;
+	        justify-content: center;
+	        min-height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+        }
+
+        .parent-container{
+
+            display: block;
+            position: absolute;
+            left: 45%;
+            top: 40%;
+        }
+
+        .circle{
+            display: inline-block;
+            border: 1px solid #e0e0e0;
+            border-radius: 50%;
+            width: 20px;
+            justify-content: space-evenly;
+            margin: 12px;
+            background-color: white;
+            color: #e0e0e0;
+        }
+
+        .progress{
+            border: 1px solid #e0e0e0;
+            width: 68%;
+            margin-top: -23px;
+            overflow: hidden;
+            margin-left: 29px;
+        }
+        
+        .anim{
+            background-color: #68b2e4;
+            width: 0%;
+            height: 0.5px;
+        }
+
+        .btn{
+            background-color: #3498db;
+            margin-top: 30px;
+            width: 48%;
+            height: 5vh;
+            border: none;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+
+        .footer{
+            position: absolute;
+            right: 0;
+            bottom: 1%;
+            margin-right: 20px;
+        }
+
+        .foot{
+            background-color: #001f61;
+            height: 7vh;
+            border-radius: 20px;
+            border: none;
+            color: #ffffff;
+        }
+
+    </style>
+    <script src="main.js"></script>
+</body>
+</html>
